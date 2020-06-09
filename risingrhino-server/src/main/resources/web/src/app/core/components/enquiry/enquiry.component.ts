@@ -5,7 +5,8 @@ export interface Product {
   discription: string;
   details: string;
   name: string;
-  articleNo: number
+  articleNo: number;
+  src: string
 }
 @Component({
   selector: 'app-enquiry',
@@ -22,10 +23,10 @@ export class EnquiryComponent implements OnInit {
   displayMaximizable: boolean;
 
   tiles: Product[] = [
-    { articleNo: 1, name: 'One', discription: '', details: '', color: 'lightblue' },
-    { articleNo: 2, name: 'Two', discription: '', details: '', color: 'lightblue' },
-    { articleNo: 3, name: 'Three', discription: '', details: '', color: 'lightblue' },
-    { articleNo: 4, name: 'Four', discription: '', details: '', color: 'lightblue' },
+    { articleNo: 1, name: 'One', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/shoes/1.jpg' },
+    { articleNo: 2, name: 'Two', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/shoes/2.jpg' },
+    { articleNo: 3, name: 'Three', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/shoes/3.jpg' },
+    { articleNo: 4, name: 'Four', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/shoes/4.jpg' },
   ];
   constructor() { }
 
@@ -33,5 +34,5 @@ export class EnquiryComponent implements OnInit {
   }
   showMaximizableDialog() {
     this.displayMaximizable = true;
-}
+  }
 }

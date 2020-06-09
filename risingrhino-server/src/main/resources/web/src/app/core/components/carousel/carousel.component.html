@@ -1,4 +1,4 @@
-<p-carousel [value]="mySlideImages" [numVisible]="1" [numScroll]="1" [circular]="true"
+<p-carousel [value]="productList" [numVisible]="1" [numScroll]="1" [circular]="true"
     [responsiveOptions]="responsiveOptions">
     <p-header>
         <div class="example-label wrapper" style="margin-top: 10px;">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="p-col-12">
                     <section>
-                        <div class="example-label wrapper">{{shoe.title}}</div>
+                        <div class="example-label wrapper">{{shoe.name}}</div>
                         <br>
                         <div class="example-button-row">
                             <div class="example-flex-container">
