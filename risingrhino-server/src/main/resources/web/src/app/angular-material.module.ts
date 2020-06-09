@@ -22,6 +22,7 @@ import {CarouselModule} from 'primeng/carousel';
 import {DialogModule} from 'primeng/dialog';
 import {MatRippleModule} from '@angular/material/core';
 import {MatDialogModule, MatDialogContent} from '@angular/material/dialog';
+import {GalleriaModule} from 'primeng/galleria';
 
 @NgModule({
    imports: [
@@ -47,7 +48,8 @@ import {MatDialogModule, MatDialogContent} from '@angular/material/dialog';
       CarouselModule,
       MatRippleModule,
       MatDialogModule,
-      DialogModule
+      DialogModule,
+      GalleriaModule
    ],
    exports: [
       MatButtonModule, 
@@ -71,7 +73,8 @@ import {MatDialogModule, MatDialogContent} from '@angular/material/dialog';
       CarouselModule,
       MatRippleModule,
       MatDialogModule,
-      DialogModule
+      DialogModule,
+      GalleriaModule
    ],
    providers: [
       MatDatepickerModule,
