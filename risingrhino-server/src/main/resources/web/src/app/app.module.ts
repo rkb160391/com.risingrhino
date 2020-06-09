@@ -12,6 +12,7 @@ import { FootwearComponent } from './core/components/footwear/footwear.component
 import { BagsComponent } from './core/components/bags/bags.component';
 import { AccessoriesComponent } from './core/components/accessories/accessories.component';
 import { CarouselComponent } from './core/components/carousel/carousel.component';
+import { EnquiryComponent } from './core/components/enquiry/enquiry.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CarouselComponent } from './core/components/carousel/carousel.component
     BagsComponent,
     AccessoriesComponent,
     CarouselComponent,
+    EnquiryComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<p-header>
+    <div class="example-label wrapper" style="margin-top: 10px;">
+        <h1>Enquiry</h1>
+    </div>
+</p-header>
+<!-- Tiles-->
+<mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let tile of tiles" colspan="1" rowspan="1" [style.background]="gridColor">
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="centered"
+            [matRippleDisabled]="disabled" [matRippleUnbounded]="unbounded" [matRippleRadius]="radius"
+            [matRippleColor]="color" (click)="showMaximizableDialog()">
+            {{tile.name}}
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<p-dialog header="Godfather I" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '90vw'}"
+    [maximizable]="true" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+    <p>The story begins as Don Vito Corleone, the head of a New York Mafia family, oversees his daughter's wedding.
+        His beloved son Michael has just come home from the war, but does not intend to become part of his father's
+        business.
+        Through Michael's life the nature of the family business becomes clear. The business of the family is just like
+        the head of the family,
+        kind and benevolent to those who give respect,
+        but given to ruthless violence whenever anything stands against the good of the family.</p>
+    <p-footer>
+        <button mat-raised-button color="accent" (click)="displayMaximizable=false">Close</button>
+    </p-footer>
+</p-dialog>

@@ -19,6 +19,9 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatCardModule } from "@angular/material/card";
 import {MatMenuModule} from '@angular/material/menu';
 import {CarouselModule} from 'primeng/carousel';
+import {DialogModule} from 'primeng/dialog';
+import {MatRippleModule} from '@angular/material/core';
+import {MatDialogModule, MatDialogContent} from '@angular/material/dialog';
 
 @NgModule({
    imports: [
@@ -41,7 +44,10 @@ import {CarouselModule} from 'primeng/carousel';
       MatPaginatorModule,
       MatCardModule,
       MatMenuModule,
-      CarouselModule
+      CarouselModule,
+      MatRippleModule,
+      MatDialogModule,
+      DialogModule
    ],
    exports: [
       MatButtonModule, 
@@ -62,7 +68,10 @@ import {CarouselModule} from 'primeng/carousel';
       MatPaginatorModule,
       MatCardModule,
       MatMenuModule,
-      CarouselModule
+      CarouselModule,
+      MatRippleModule,
+      MatDialogModule,
+      DialogModule
    ],
    providers: [
       MatDatepickerModule,

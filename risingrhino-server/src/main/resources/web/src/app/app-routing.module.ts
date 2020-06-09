@@ -6,6 +6,7 @@ import { ContactComponent } from './core/components/contact/contact.component';
 import { FootwearComponent } from './core/components/footwear/footwear.component';
 import { BagsComponent } from './core/components/bags/bags.component';
 import { AccessoriesComponent } from './core/components/accessories/accessories.component';
+import { EnquiryComponent } from './core/components/enquiry/enquiry.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'footwear', component: FootwearComponent },
   { path: 'bags', component: BagsComponent },
-  { path: 'accessories', component: AccessoriesComponent }];
+  { path: 'accessories', component: AccessoriesComponent },
+  { path: 'enquiry', component: EnquiryComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

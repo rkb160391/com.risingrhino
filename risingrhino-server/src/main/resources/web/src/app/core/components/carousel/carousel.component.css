@@ -39,11 +39,11 @@
 :host>>> .ui-carousel .ui-carousel-dots-container .ui-carousel-dot-item.ui-state-highlight .ui-carousel-dot-icon {
     background-color: #e4a806;
 }
-.wrapper {
-    text-align: center;
-}
-
 .button {
     position: absolute;
     top: 50%;
+}
+:host>>>.mat-raised-button{
+    width: 200px !important;
+    height: 40px !important;
 }
