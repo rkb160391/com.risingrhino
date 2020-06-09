@@ -18,6 +18,8 @@ import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatCardModule } from "@angular/material/card";
 import {MatMenuModule} from '@angular/material/menu';
+import {CarouselModule} from 'primeng/carousel';
+
 @NgModule({
    imports: [
       CommonModule,
@@ -38,10 +40,11 @@ import {MatMenuModule} from '@angular/material/menu';
       MatTableModule,
       MatPaginatorModule,
       MatCardModule,
-      MatMenuModule
+      MatMenuModule,
+      CarouselModule
    ],
    exports: [
-      MatButtonModule,
+      MatButtonModule, 
       MatToolbarModule,
       MatIconModule,
       MatSidenavModule,
@@ -58,7 +61,8 @@ import {MatMenuModule} from '@angular/material/menu';
       MatTableModule,
       MatPaginatorModule,
       MatCardModule,
-      MatMenuModule
+      MatMenuModule,
+      CarouselModule
    ],
    providers: [
       MatDatepickerModule,

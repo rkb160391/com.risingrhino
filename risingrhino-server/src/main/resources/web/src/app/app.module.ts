@@ -11,6 +11,7 @@ import { ContactComponent } from './core/components/contact/contact.component';
 import { FootwearComponent } from './core/components/footwear/footwear.component';
 import { BagsComponent } from './core/components/bags/bags.component';
 import { AccessoriesComponent } from './core/components/accessories/accessories.component';
+import { CarouselComponent } from './core/components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,14 @@ import { AccessoriesComponent } from './core/components/accessories/accessories.
     ContactComponent,
     FootwearComponent,
     BagsComponent,
-    AccessoriesComponent
+    AccessoriesComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
