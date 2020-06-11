@@ -14,20 +14,34 @@
         </div>
     </mat-grid-tile>
 </mat-grid-list>
-
-<p-dialog header="Godfather I" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '90vw'}"
+<!-- Dialog Box-->
+<p-dialog header="Product Catalog" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '80vw'}"
     [maximizable]="true" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
-    <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '400px'}" [numVisible]="4"> 
+    <h3 class="first">Default</h3>
+    <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{'max-width': '550px', 'margin-top':'2em'}" [numVisible]="4" thumbnailsPosition="left">
         <ng-template pTemplate="item" let-item>
-            <img [src]="item.previewImageSrc" style="width: 100%;" />
+            <img [src]="item.previewImageSrc" style="width: 100%; display: block; object-fit: cover;" />
+            <section style="margin: 30px;">
+                $light-bg-darker-5:   darken($light-background, 5%);
+                $light-bg-darker-10:  darken($light-background, 10%);
+                $light-bg-darker-20:  darken($light-background, 20%);
+                $light-bg-darker-30:  darken($light-background, 30%);
+                $light-bg-lighter-5:  lighten($light-background, 5%);
+                $dark-bg-tooltip:     lighten(#2c2c2c, 20%);
+                $dark-bg-alpha-4:     rgba(#2c2c2c, 0.04);
+                $dark-bg-alpha-12:    rgba(#2c2c2c, 0.12);
+                
+            </section>
         </ng-template>
         <ng-template pTemplate="thumbnail" let-item>
             <div class="p-grid p-nogutter p-justify-center">
-                <img [src]="item.thumbnailImageSrc"  style="width: 30%;"/>
+                <img [src]="item.thumbnailImageSrc" style="width: 100%;" />
             </div>
         </ng-template>
     </p-galleria>
     <p-footer>
-        <button mat-raised-button color="accent" (click)="displayMaximizable=false">Close</button>
+        <button mat-raised-button color="accent" (click)="displayMaximizable=false">Cancel</button>
+        <button mat-raised-button color="accent" (click)="displayMaximizable=false">Submit</button>
     </p-footer>
 </p-dialog>

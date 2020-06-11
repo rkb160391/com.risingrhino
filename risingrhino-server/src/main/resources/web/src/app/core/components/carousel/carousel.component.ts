@@ -16,10 +16,12 @@ export interface Product {
 export class CarouselComponent implements OnInit {
 
   productList: Product[] = [
-    { articleNo: 1, name: 'Item 1', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/collections/1.jpg' },
-    { articleNo: 2, name: 'Item 2', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/collections/2.jpg' },
-    { articleNo: 3, name: 'Item 3', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/collections/3.jpg' },
-    { articleNo: 4, name: 'Item 4', discription: '', details: '', color: 'lightblue', src: 'assets/img/products/collections/3.jpg' },
+    { articleNo: 1, name: 'Item 1', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_1.jpg' },
+    { articleNo: 2, name: 'Item 2', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_2.jpg' },
+    { articleNo: 3, name: 'Item 3', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_3.jpg' },
+    { articleNo: 4, name: 'Item 4', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_4.jpg' },
+    { articleNo: 4, name: 'Item 5', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_5.jpg' },
+    { articleNo: 4, name: 'Item 6', discription: '', details: '', color: 'lightblue', src: 'assets/img/carousel/carousel_6.jpg' }
   ];
   responsiveOptions;
   constructor() {

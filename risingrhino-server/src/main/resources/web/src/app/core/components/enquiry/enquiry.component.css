@@ -33,3 +33,9 @@
         width: 75vw !important;
     }
 }
+/* :host>>> .ui-dialog .ui-dialog-content {
+  overflow: inherit;
+} */
+:host >>> .ui-galleria .ui-galleria-thumbnail-container{
+  max-width: 60px !important;
+}

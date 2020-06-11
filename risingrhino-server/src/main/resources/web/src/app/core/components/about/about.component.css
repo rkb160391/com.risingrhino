@@ -1,0 +1,21 @@
+.text {
+    position: relative;
+    text-align: center;
+    color: #e4a806;
+    /* background-color:#e4a806; */
+    font-size: 18px;
+  }
+  .centered {
+    position: absolute;
+    top: 33%;
+    text-align: center;
+    left: 6%;
+    transform: translate(-3%, -33%);
+  }
+  :host>>> .mat-card-header {
+    margin-bottom: 10px;
+}
+ 
+  /* :host>>>.mat-card-subtitle, .mat-card-content{
+      font-size: 20px !important;
+  } */
