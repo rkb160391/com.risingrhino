@@ -24,6 +24,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule, MatDialogContent } from '@angular/material/dialog';
 import { GalleriaModule } from 'primeng/galleria';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
    imports: [
@@ -52,7 +53,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       DialogModule,
       GalleriaModule,
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      HttpClientModule
    ],
    exports: [
       MatButtonModule,
@@ -79,7 +81,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       DialogModule,
       GalleriaModule,
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      HttpClientModule
    ],
    providers: [
       MatDatepickerModule,

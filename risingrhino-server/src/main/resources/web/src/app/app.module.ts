@@ -13,6 +13,8 @@ import { BagsComponent } from './core/components/bags/bags.component';
 import { AccessoriesComponent } from './core/components/accessories/accessories.component';
 import { CarouselComponent } from './core/components/carousel/carousel.component';
 import { EnquiryComponent } from './core/components/enquiry/enquiry.component';
+import { RestApiService } from './core/services/rest-api.service';
+import { ApiUrlService } from './core/services/api-url.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { EnquiryComponent } from './core/components/enquiry/enquiry.component';
     BrowserAnimationsModule,
     AngularMaterialModule,
   ],
-  providers: [],
+  providers: [RestApiService, ApiUrlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
