@@ -1,25 +1,4 @@
-FROM maven:3.5.2-jdk-8-alpine AS maven_build
-
-COPY pom.xml /tmp/
-
-COPY src /tmp/src/
-
-WORKDIR /tmp/
-
-RUN mvn package
-
-#pull base image
-
-FROM openjdk:8-jdk-alpine
-
-#maintainer 
-MAINTAINER rkb160391@gmail.com
-#expose port 8080
+FROM java:8
 EXPOSE 8080
-
-#default command
-CMD java -jar /data/risingrhino-1.0.0.jar
-
-#copy hello world to docker image from builder image
-
-COPY --from=maven_build /tmp/target/risingrhino-1.0.0.jar /data/risingrhino-1.0.0.jar
+ADD /target/risingrhino-server-0.0.1-SNAPSHOT.jar risingrhino-1.0.0.jar
+ENTRYPOINT ["java","-jar","risingrhino-1.0.0.jar"]
