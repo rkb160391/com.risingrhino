@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RisingrhinoServerApplication {
+public class RisingRhinoServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RisingrhinoServerApplication.class, args);
+		SpringApplication.run(RisingRhinoServerApplication.class, args);
 	}
 
 }

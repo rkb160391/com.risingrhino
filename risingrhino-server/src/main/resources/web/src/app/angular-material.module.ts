@@ -17,12 +17,13 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatCardModule } from "@angular/material/card";
-import {MatMenuModule} from '@angular/material/menu';
-import {CarouselModule} from 'primeng/carousel';
-import {DialogModule} from 'primeng/dialog';
-import {MatRippleModule} from '@angular/material/core';
-import {MatDialogModule, MatDialogContent} from '@angular/material/dialog';
-import {GalleriaModule} from 'primeng/galleria';
+import { MatMenuModule } from '@angular/material/menu';
+import { CarouselModule } from 'primeng/carousel';
+import { DialogModule } from 'primeng/dialog';
+import { MatRippleModule } from '@angular/material/core';
+import { MatDialogModule, MatDialogContent } from '@angular/material/dialog';
+import { GalleriaModule } from 'primeng/galleria';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
    imports: [
@@ -49,10 +50,12 @@ import {GalleriaModule} from 'primeng/galleria';
       MatRippleModule,
       MatDialogModule,
       DialogModule,
-      GalleriaModule
+      GalleriaModule,
+      FormsModule,
+      ReactiveFormsModule
    ],
    exports: [
-      MatButtonModule, 
+      MatButtonModule,
       MatToolbarModule,
       MatIconModule,
       MatSidenavModule,
@@ -74,7 +77,9 @@ import {GalleriaModule} from 'primeng/galleria';
       MatRippleModule,
       MatDialogModule,
       DialogModule,
-      GalleriaModule
+      GalleriaModule,
+      FormsModule,
+      ReactiveFormsModule
    ],
    providers: [
       MatDatepickerModule,
